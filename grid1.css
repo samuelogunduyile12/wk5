@@ -1,0 +1,44 @@
+div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 100px);
+    grid-template-areas:
+    "a a a"
+    "a a a"
+    "a a a"
+    "b b c"
+    "b b d"
+    "e f g"
+    "h h i";
+    gap: 10px;
+}
+div > :nth-child(1){
+    grid-area: h;
+}
+div > :nth-child(2){
+    grid-area: c;
+}
+div > :nth-child(3){
+    grid-area: a;
+}
+div > :nth-child(4){
+    grid-area: e;
+}
+div > :nth-child(5){
+    grid-area: g;
+}
+vdiv > :nth-child(6){
+    grid-area: b;
+}
+vdiv > :nth-child(7){
+    grid-area: d;
+}
+div > :nth-child(8){
+    grid-area: i;
+}
+div > :nth-child(9){
+    grid-area: f;
+}
+section{
+    background-color: blue;
+}
